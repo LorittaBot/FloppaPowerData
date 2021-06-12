@@ -1,4 +1,4 @@
-<h1 align="center">🙋‍♀️ FloppaPower 🙋‍♀️</h1>
+<h1 align="center">🐈 FloppaPower 🐈</h1>
 <img height="250" src="https://cdn.discordapp.com/avatars/852292714380263425/1ac1b7eb51f22caab92172c5a052f4fa.png?size=2048" align="right">
 
 List of known selfbots IDs and other data to help you keep them away from your server, contributed by other administrators in the Elite Penguin Force Server. 🐧
