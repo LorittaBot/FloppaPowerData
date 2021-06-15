@@ -65,4 +65,5 @@ func main() {
         }
         fmt.Println("User: " + banList.user + ", Entry number: " + banList.entry + ", Valid: " + banList.valid)
     }
-}```
+}
+```
