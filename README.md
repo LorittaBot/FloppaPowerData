@@ -28,3 +28,41 @@ fs.createReadStream('blocked_users.csv')
     console.log('CSV file successfully processed!');
 });
 ```
+
+#### Go
+```go
+package main
+
+import (
+    "encoding/csv"
+    "fmt"
+    "os"
+)
+
+type banData struct {
+    user string
+    entry string
+    valid string
+}
+func main() {
+
+    csvFile, err := os.Open("blocked_users.csv")
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println("Successfully Opened CSV file!")
+	defer csvFile.Close()
+    
+    csvLines, err := csv.NewReader(csvFile).ReadAll()
+    if err != nil {
+        fmt.Println(err)
+    }    
+    for _, line := range csvLines {
+        banList := banData{
+            user: line[0],
+            entry: line[1],
+			valid: line[2],
+        }
+        fmt.Println("User: " + banList.user + ", Entry number: " + banList.entry + ", Valid: " + banList.valid)
+    }
+}```
